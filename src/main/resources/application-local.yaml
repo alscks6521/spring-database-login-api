@@ -1,9 +1,0 @@
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/user?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-    username: root
-    password: 12341234
-  data:
-    redis:
-      host: localhost
-      port: 6379
