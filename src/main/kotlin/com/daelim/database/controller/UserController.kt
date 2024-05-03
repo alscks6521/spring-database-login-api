@@ -42,5 +42,19 @@ class UserController(private val userService: UserService) {
         }
     }
 
+    @GetMapping("/sessionupdate")
+    fun sessionUpdate(
+        @RequestParam username: String,
+        @RequestParam sessionId: String
+    ): ResponseEntity<String> {
+        return if (userService.updateSession(username, sessionId)) {
+            ResponseEntity.ok("Session Update Success!")
+        } else {
+            ResponseEntity.notFound().build()
+        }
+    }
+
+
+
 
 }
