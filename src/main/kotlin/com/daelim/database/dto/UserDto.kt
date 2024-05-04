@@ -11,7 +11,7 @@ data class User(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null,
     var username: String,
-    var password: String // 실제 애플리케이션에서는 비밀번호를 해시하여 저장
+    var password: String
 )
 /* 데이터베이스 설정
 -> API를 활성화 하기 위하여 DB테이블 user 생성 명령어 후 Redis 서버 start 하여 세션 관리
