@@ -2,6 +2,7 @@
 package com.daelim.database.service
 
 import com.daelim.database.dto.User
+import com.daelim.database.dto.UserUpdateDTO
 import com.daelim.database.repository.UserRepository
 import org.springframework.data.redis.core.StringRedisTemplate
 import org.springframework.stereotype.Service
@@ -27,6 +28,7 @@ class UserService(
     }
 
     // User 수정 업데이트
+    // UserUpdateDTO import 추가- 유진
     fun updateUser(userId: Long, dto: UserUpdateDTO): User {
         val user = userRepository.findById(userId).orElseThrow {
             IllegalArgumentException("User not found")
