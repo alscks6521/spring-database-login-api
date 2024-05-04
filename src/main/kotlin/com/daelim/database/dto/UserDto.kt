@@ -13,6 +13,12 @@ data class User(
     var username: String,
     var password: String
 )
+
+data class UserUpdateDTO(
+    val username: String,
+    val password: String
+)
+
 /*
 CREATE TABLE `user` (
 	`id` BIGINT(19) NOT NULL AUTO_INCREMENT,
