@@ -11,7 +11,7 @@ data class User(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null,
     var username: String,
-    var password: String // 실제 애플리케이션에서는 비밀번호를 해시하여 저장
+    var password: String
 )
 /*
 CREATE TABLE `user` (
