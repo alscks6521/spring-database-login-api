@@ -11,8 +11,14 @@ data class User(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     var id: Long? = null,
     var username: String,
-    var password: String // 실제 애플리케이션에서는 비밀번호를 해시하여 저장
+    var password: String
 )
+
+data class UserUpdateDTO(
+    val username: String,
+    val password: String
+)
+
 /*
 CREATE TABLE `user` (
 	`id` BIGINT(19) NOT NULL AUTO_INCREMENT,
