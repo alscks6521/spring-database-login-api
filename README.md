@@ -1,3 +1,4 @@
+## Jira https://daelim-univ.atlassian.net/browse/CET-57
 ### 사용자의 회원가입, 로그인, 정보 수정, 탈퇴 등의 기능을 제공하는 API  
 ### Redis  
 ---
