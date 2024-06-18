@@ -1,4 +1,5 @@
-##지라 : https://daelim-univ.atlassian.net/issues/CET-51?filter=-2
+지라 : https://daelim-univ.atlassian.net/issues/CET-51?filter=-2
+---
 ### 사용자의 회원가입, 로그인, 정보 수정, 탈퇴 등의 기능을 제공하는 API  
 ### Redis  
 ---
